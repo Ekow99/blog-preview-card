@@ -35,8 +35,8 @@ body{
 
 .preview-card{
     background-color: var(--White);
-    margin: 0 auto;
-    width: 30%;
+    width: 80%;
+    max-width: 768px;
     border: 2px solid var(--Black);
     border-radius: 1rem;
     box-shadow: 12px 12px 0px -3px var(--Black);
@@ -49,12 +49,12 @@ body{
 }
 
 .preview-card-state{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.8rem;
 }
 
 .preview-card-btn{
-    width: 20%;
     padding: 5px;
     background-color: var(--Yellow);
     border: none;
@@ -95,5 +95,11 @@ body{
 
 .profile-name{
     font-weight: 800;
+}
+
+@media (width >= 750px) {
+    .preview-card{
+        width: 30%;
+    }
 }
 
